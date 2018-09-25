@@ -2,6 +2,23 @@
 #FONTS
 \*------------------------------------*/
 
+@font-face {
+    font-family: Inter-UI;
+    font-weight: 400;
+    src: url("../fonts/Inter-UI-Regular.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: Inter-UI;
+    font-weight: 600;
+    src: url("../fonts/Inter-UI-Medium.woff2") format('woff2');
+}
+@font-face {
+    font-family: Inter-UI;
+    font-weight: 700;
+    src: url("../fonts/Inter-UI-Bold.woff2") format('woff2');
+}
+
 /*------------------------------------*\
 #Variables
 \*------------------------------------*/
@@ -25,12 +42,12 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: Helvetica, arial, sans-serif;
-    color: grey;
+    font-family: "Inter-UI", Helvetica, arial, sans-serif;
+    color: #20113A;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: white;
+    background-color: #F5F6FA;
 }
 
 *,
@@ -47,13 +64,13 @@ html {
 */
 
 ::-moz-selection {
-    background: HotPink;
+    background: #3385FF;
     color: white;
     text-shadow: none;
 }
 
 ::selection {
-    background: HotPink;
+    background: #3385FF;
     color: white;
     text-shadow: none;
 }
@@ -158,20 +175,23 @@ hr {
 }
 
 a {
-    color: HotPink;
+    color: #3385FF;
     transition: all .1s ease-in-out;
 }
 
 a:visited,
 a:active {
-    color: HotPink;
+    color: #1B4186;
 }
 
 a:hover,
 a:focus {
-    color: DeepPink;
+    color: #1B4186;
 }
 
+label,input{
+  display: block;
+}
 /*------------------------------------*\
 #OBJECTS
 \*------------------------------------*/
@@ -432,6 +452,32 @@ a:focus {
     Website main logo
 */
 
+.c-logo{
+  height: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.c-logo__symbol{
+  height: 100%;
+  display: block;
+
+}
+
+.c-logo__path--1{
+  fill:#20223A;
+}
+
+.c-logo__path--2{
+  fill: #3385FF;
+}
+
+.c-logo__path--3{
+  fill: #1B4186;
+}
+
+
+
 /*
     Component: Card
     ---
@@ -451,10 +497,23 @@ a:focus {
 */
 
 .c-input {
-
+  -wenkt-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  width:100%;
+  border: 1px solid #E2E3E7;
+  border-radius: 4px;
+  font-family: inherit;
+  color: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 11px 16px;
+  outline: none;
 }
 
 .c-input:focus {
+  border-color: #81ADF0;
+  box-shadow: 0 0 0 3px #DCEAFF;
 }
 
 /*
@@ -471,6 +530,10 @@ a:focus {
 
 .c-form-field:focus-within .c-label {
 
+}
+.c-form-field--option{
+  display: flex;
+  align-items: center;
 }
 
 /*
@@ -533,18 +596,30 @@ a:focus {
 */
 
 .c-button {
-
+  font-size: 16px;
+  font-weight: 600;
+  border: solid 1px #2E77E6;
+  border-radius: 3px;
+  color: #FFFFFF;
+  background-color: #3385FF;
+  line-height: 32px;
+  padding: 12px;
+  width: 100%;
+  outline: none;
 }
 
 .c-button:hover {
+  background-color: #2E77E6;
 
 }
 
 .c-button:focus {
-
+  border-color: #81ADF0;
+  box-shadow: 0 0 0 3px #DCEAFF;
 }
 
 .c-button:active {
+    background-color: #1B4186;
 
 }
 
