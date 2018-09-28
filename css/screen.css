@@ -561,6 +561,7 @@ label,input{
   line-height: 24px;
   padding: 11px 16px;
   outline: none;
+  box-shadow: inside 0 1px 1px #20223a15;
 }
 
 .c-input:focus {
@@ -698,7 +699,7 @@ label,input{
 */
 
 .u-color-neutral-base {
-    color: Silver;
+    color: #757787;
 }
 
 .u-color-neutral-dark {
