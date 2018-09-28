@@ -477,6 +477,7 @@ label,input{
   height: 24px;
   display: flex;
   justify-content: center;
+  margin-bottom: 48px;
 }
 
 .c-logo__symbol{
@@ -694,6 +695,13 @@ label,input{
 /*------------------------------------*\
 #UTILITIES
 \*------------------------------------*/
+.u-bg{
+  background-image: linear-gradient(to bottom right, var(--color-alpha-light), var(--color-alpha-dark)) !important;
+}
+
+.u-white{
+  fill:white !important;
+}
 
 /*
     Utilities: color
