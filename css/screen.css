@@ -24,6 +24,24 @@
 \*------------------------------------*/
 
 :root {
+    --color-alpha-xx-light: #DCEAFF;
+    --color-alpha-x-light: #81ADF0;
+    --color-alpha-light: #4F95FF;
+    --color-alpha: #3385FF;
+    --color-alpha-dark: #2E77E6;
+    --color-alpha-x-dark: #1B4186;
+    --color-neutral-xxxx-light: #F5F6FA;
+    --color-neutral-xxx-light: #E2E3E7;
+    --color-neutral-xx-light: #CACCD4;
+    --color-neutral-x-light: #B5B6C0;
+    --color-neutral-light: #A0A1AD;
+    --color-neutral: #8B8C9A;
+    --color-neutral-dark: #757787;
+    --color-neutral-x-dark: #606274;
+    --color-neutral-xx-dark: #4B4C60;
+    --color-neutral-xxx-dark: #35374D;
+    --color-neutral-xxxx-dark: #20223A;
+
 
 }
 
@@ -47,7 +65,7 @@ html {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #F5F6FA;
+    background-color: var(--color-neutral-xxxx-light);
 }
 
 *,
@@ -64,13 +82,13 @@ html {
 */
 
 ::-moz-selection {
-    background: #3385FF;
+    background: var(--color-alpha);
     color: white;
     text-shadow: none;
 }
 
 ::selection {
-    background: #3385FF;
+    background: var(--color-alpha);
     color: white;
     text-shadow: none;
 }
@@ -175,18 +193,18 @@ hr {
 }
 
 a {
-    color: #3385FF;
+    color: var(--color-alpha);
     transition: all .1s ease-in-out;
 }
 
 a:visited,
 a:active {
-    color: #1B4186;
+    color: var(--color-alpha-x-dark);
 }
 
 a:hover,
 a:focus {
-    color: #1B4186;
+    color: var(--color-alpha-x-dark);
 }
 
 label,input{
@@ -465,15 +483,15 @@ label,input{
 }
 
 .c-logo__path--1{
-  fill:#20223A;
+  fill:var(--color-neutral-xxxx-dark);
 }
 
 .c-logo__path--2{
-  fill: #3385FF;
+  fill: var(--color-alpha);
 }
 
 .c-logo__path--3{
-  fill: #1B4186;
+  fill: var(--color-alpha-x-dark);
 }
 
 
@@ -501,7 +519,7 @@ label,input{
   -moz-appearance:none;
   appearance:none;
   width:100%;
-  border: 1px solid #E2E3E7;
+  border: 1px solid var(--color-neutral-xxx-light);
   border-radius: 4px;
   font-family: inherit;
   color: inherit;
@@ -512,8 +530,8 @@ label,input{
 }
 
 .c-input:focus {
-  border-color: #81ADF0;
-  box-shadow: 0 0 0 3px #DCEAFF;
+  border-color: var(--color-alpha-x-light);
+  box-shadow: 0 0 0 3px var(--color-alpha-xx-light);
 }
 
 /*
@@ -598,10 +616,10 @@ label,input{
 .c-button {
   font-size: 16px;
   font-weight: 600;
-  border: solid 1px #2E77E6;
+  border: solid 1px var(--color-alpha-dark);
   border-radius: 3px;
   color: #FFFFFF;
-  background-color: #3385FF;
+  background-color: var(--color-alpha);
   line-height: 32px;
   padding: 12px;
   width: 100%;
@@ -609,17 +627,17 @@ label,input{
 }
 
 .c-button:hover {
-  background-color: #2E77E6;
+  background-color: var(--color-alpha-dark);
 
 }
 
 .c-button:focus {
-  border-color: #81ADF0;
-  box-shadow: 0 0 0 3px #DCEAFF;
+  border-color: var(--color-alpha-x-light);
+  box-shadow: 0 0 0 3px var(--color-alpha-xx-light);
 }
 
 .c-button:active {
-    background-color: #1B4186;
+    background-color: var(--color-alpha-x-dark);
 
 }
 
