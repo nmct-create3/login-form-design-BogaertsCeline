@@ -227,6 +227,9 @@ label,input{
 
 .o-row--login {
     /* stuff here to align the card */
+    display: flex;
+    align-items: center;
+    height: 100vh;
 }
 
 /* size modifiers */
